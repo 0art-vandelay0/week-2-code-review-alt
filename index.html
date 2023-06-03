@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <script src="js/scripts.js"></script>
+    <link rel="stylesheet" href="css/styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose a Coding Language</title>
+</head>
+
+<body>
+    <div>
+        <h1>Choose a Coding Language</h1>
+        <p class="intro">Check which statements apply to you:</p>
+
+        <form id="languageSurvey">
+            <div class="question-box">
+                <div>
+                    <input id="q1" type="checkbox" name="q1" value="yes">
+                    <label for="q1">Dynamic Typing: JavaScript allows variables to hold values of any type, providing
+                        flexibility in coding.</label>
+                </div>
+            </div>
+            <br>
+            <div class="question-box">
+                <div>
+                    <input id="q2" type="checkbox" name="q2" value="yes">
+                    <label for="q2">Object-Oriented Programming: JavaScript supports object-oriented programming
+                        concepts,
+                        including classes, inheritance, and encapsulation.</label>
+                </div>
+            </div>
+            <br>
+            <div class="question-box">
+                <div>
+                    <input id="q3" type="checkbox" name="q3" value="yes">
+                    <label for="q3">Functional Programming: JavaScript embraces functional programming paradigms with
+                        features
+                        like higher-order functions and lambda expressions.</label>
+                </div>
+            </div>
+            <br>
+            <div class="question-box">
+                <div>
+                    <input id="q4" type="checkbox" name="q4" value="yes">
+                    <label for="q4">Concurrency and Asynchronicity: JavaScript excels in handling concurrent operations
+                        and
+                        asynchronous tasks through its event-driven model and features like callbacks, promises, and
+                        async/await
+                        syntax.</label>
+                </div>
+            </div>
+            <br>
+            <div class="question-box">
+                <div>
+                    <input id="q5" type="checkbox" name="q5" value="yes">
+                    <label for="q5">Cross-Platform Compatibility: JavaScript is widely supported across different
+                        platforms and
+                        browsers, making it suitable for developing web applications that run seamlessly on various
+                        devices.</label>
+                </div>
+            </div>
+            <br>
+            <button id="subButton" type="submit">Submit</button>
+        </form>
+        <div id="responseContainer" class="choice-response">
+            <div id="python" class="hidden">
+                <p class="boldLarge">You should try <span class="uppercase">Python!</span></p>
+                <p>Python is more readable than most languages because it uses a simplified syntax with clear and
+                    intuitive keywords and structures, making it easier to understand and follow even for those new
+                    to
+                    coding.</p>
+                <p>Python has extensive community support and a rapidly growing popularity among developers, making
+                    it highly sought after in the job market for its wide range of applications, from web
+                    development and data analysis to machine learning and artificial intelligence.</p>
+                <p>Python is a great language for database managment and back-end web development with frameworks
+                    like
+                    Flask and Django.</p>
+            </div>
+            <div id="javaScript" class="hidden">
+                <p class="boldLarge">You should try <span class="uppercase">Javascript!</span></p>
+                <p>JavScript provides powerful built-in tools for manipulating the webpage DOM, making it a great
+                    front-end web development language. It is also natively supported by browsers.</p>
+                <p>JavaScript is a versitle language and offers excellent cross-platform compatibility, allowing
+                    developers to write code once and run it seamlessly across different operating systems and
+                    devices, including desktops, mobile devices, and even embedded systems.</p>
+                <p>JavaScript's widespread adoption and support makes it the de facto language for web development,
+                    with an extensive ecosystem of libraries, frameworks, and tools available.</p>
+            </div>
+            <div id="rust" class="hidden">
+                <p class="boldLarge">You should try <span class="uppercase">Rust!</span></p>
+                <p>Rust prioritizes performance and safety, offering faster execution speeds and early detection of
+                    common errors through strict compile-time checks. It is an excellent choice for
+                    performance-critical systems programming and projects that require reliability.</p>
+                <p>Rust's unique ownership system enables efficient memory management without a garbage collector,
+                    making it ideal for low-level programming requiring precise memory control.</p>
+            </div>
+            <div id="errorMessage" class="hidden">
+                <p>You should really select at least one statement. Try again.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
